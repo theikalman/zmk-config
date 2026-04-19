@@ -18,3 +18,8 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+include:
+  - board: zmk-keyboard-TOTEM
+    shield: zmk-keyboard-TOTEM_left
+  - board: zmk-keyboard-TOTEM
+    shield: zmk-keyboard-TOTEM_right
