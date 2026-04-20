@@ -19,7 +19,7 @@
 #
 ---
 include:
-  - board: zmk-keyboard-totem
+  - board: xiao_ble_sense
     shield: zmk-keyboard-totem_left
-  - board: zmk-keyboard-totem
+  - board: xiao_ble_sense
     shield: zmk-keyboard-totem_right
