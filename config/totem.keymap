@@ -80,8 +80,8 @@ label= "BASE"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I        &kp O       &kp P
-                &mt A       &mt S       &mt D       &mt F       &kp G           &kp H       &mt J       &mt K        &mt L       &mt SEMI
-    &kp Q       &kp LSHFT Z &kp LALT X  &kp LCTRL C &kp LGUI V  &kp B           &kp N       &kp RGUI M  &kp RCTRL COMMA &kp RALT DOT &kp RSHFT FSLH &kp BSLH
+                &mt LSHFT A &mt LALT S  &mt LCTRL D &mt LGUI F  &kp G           &kp H       &mt RGUI J  &mt RCTRL K  &mt RALT L  &mt RSHFT SEMI
+    &kp Q       &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA    &kp DOT     &kp FSLH    &kp BSLH
                                         &kp DEL     &lt NAV RET &kp TAB         &kp ESC     &lt SYM SPACE &kp BSPC
                         >;
                 };
