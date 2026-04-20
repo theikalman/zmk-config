@@ -19,7 +19,7 @@
 #
 ---
 include:
-  - board: zmk-keyboard-TOTEM
-    shield: zmk-keyboard-TOTEM_left
-  - board: zmk-keyboard-TOTEM
-    shield: zmk-keyboard-TOTEM_right
+  - board: zmk-keyboard-totem
+    shield: zmk-keyboard-totem_left
+  - board: zmk-keyboard-totem
+    shield: zmk-keyboard-totem_right
