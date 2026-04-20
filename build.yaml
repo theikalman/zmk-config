@@ -20,6 +20,6 @@
 ---
 include:
   - board: xiao_ble_sense
-    shield: zmk-keyboard-totem_left
+    shield: totem_left
   - board: xiao_ble_sense
-    shield: zmk-keyboard-totem_right
+    shield: totem_right
