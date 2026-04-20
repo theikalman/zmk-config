@@ -18,7 +18,8 @@
 
 #define BASE    0
 #define NUMSYM  1
-#define ADJ     2
+#define NAVI    2
+#define ADJ     3
 
 &mt {
   quick-tap-ms = <100>;
@@ -56,7 +57,7 @@ label= "BASE"                              ;
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃     `     ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃     /     ┃     '     ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃    DEL    ┃RET[NUMSYM]┃    TAB    ┃   ┃    ESC    ┃SPC[NUMSYM]┃   BSPC    ┃
+//                                     ┃    DEL    ┃RET[NUMSYM]┃ TAB[NAVI] ┃   ┃ ESC[NAVI] ┃SPC[NUMSYM]┃   BSPC    ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
@@ -64,7 +65,7 @@ label= "BASE"                              ;
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I        &kp O       &kp P
                 &kp A       &kp S       &kp D       &kp F       &kp G           &kp H       &kp J       &kp K        &kp L       &kp SEMI
     &kp GRAVE   &mt LSHFT Z &mt LALT X  &mt LCTRL C &mt LGUI V  &kp B           &kp N       &mt RGUI M  &mt RCTRL COMMA &mt RALT DOT &mt RSHFT FSLH &kp SQT
-                                        &kp DEL   &lt NUMSYM RET &kp TAB        &kp ESC   &lt NUMSYM SPACE &kp BSPC
+                                        &kp DEL   &lt NUMSYM RET &lt NAVI TAB   &lt NAVI ESC &lt NUMSYM SPACE &kp BSPC
                         >;
                 };
 
@@ -90,7 +91,32 @@ label= "NUMSYM"                            ;
                 &none       &none       &none       &none       &kp LBRC        &kp RBRC    &kp N7      &kp N8      &kp N9      &kp EQUAL
                 &none       &none       &none       &none       &kp LBKT        &kp RBKT    &kp N4      &kp N5      &kp N6      &kp UNDER
     &none       &kp LSHFT   &kp LALT    &kp LCTRL   &kp LGUI    &kp LPAR        &kp RPAR    &kp N1      &kp N2      &kp N3      &kp N0      &kp BSLH
-                                        &trans      &trans      &trans          &mo ADJ     &trans      &trans
+                                        &kp DEL     &trans      &kp TAB         &mo ADJ     &trans      &kp BSPC
+                        >;
+                };
+
+// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+
+                nav_layer {
+// ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+label= "NAVI"                              ;
+// ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+//             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+//             ┃           ┃           ┃     ↑     ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
+//             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
+//             ┃           ┃     ⟵     ┃     ↓     ┃     →     ┃           ┃   ┃    HOME   ┃   PGDWN   ┃    PGUP   ┃    END    ┃           ┃
+// ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
+// ┃           ┃   SHFT    ┃    ALT    ┃   CTRL    ┃    CMD    ┃           ┃   ┃           ┃    CMD    ┃    CTRL   ┃     ALT   ┃    SHFT   ┃           ┃
+// ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+//                                     ┃    DEL    ┃    RET    ┃ TAB[NAVI] ┃   ┃ ESC[NAVI] ┃    SPC    ┃    BSPC   ┃
+//                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+ bindings = <
+// ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
+
+                &none       &none       &kp UP      &none       &none            &none       &none       &none       &none       &none
+                &none       &kp LEFT    &kp DOWN    &kp RIGHT   &none            &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &none
+    &none       &kp LSHFT   &kp LALT    &kp LCTRL   &kp LGUI    &none            &none       &kp RGUI    &kp RCTRL   &kp RALT    &kp RSHFT   &none
+                                        &kp DEL     &kp RET     &trans           &trans      &kp SPACE   &kp BSPC
                         >;
                 };
 
