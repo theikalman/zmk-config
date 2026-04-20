@@ -80,7 +80,7 @@ label= "NUMSYM"                            ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃           ┃           ┃           ┃           ┃     [     ┃   ┃     ]     ┃     4     ┃     5     ┃     6     ┃     -     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃           ┃           ┃           ┃           ┃     (     ┃   ┃     )     ┃     1     ┃     2     ┃     3     ┃     0     ┃     \     ┃
+// ┃           ┃   SHFT    ┃    ALT    ┃   CTRL    ┃    CMD    ┃     (     ┃   ┃     )     ┃     1     ┃     2     ┃     3     ┃     0     ┃     \     ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃    DEL    ┃RET[NUMSYM]┃    TAB    ┃   ┃    ADJ    ┃SPC[NUMSYM]┃    BSPC   ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -89,7 +89,7 @@ label= "NUMSYM"                            ;
 
                 &none       &none       &none       &none       &kp LBRC        &kp RBRC    &kp N7      &kp N8      &kp N9      &kp EQUAL
                 &none       &none       &none       &none       &kp LBKT        &kp RBKT    &kp N4      &kp N5      &kp N6      &kp UNDER
-    &none       &none       &none       &none       &none       &kp LPAR        &kp RPAR    &kp N1      &kp N2      &kp N3      &kp N0      &kp BSLH
+    &none       &kp LSHFT   &kp LALT    &kp LCTRL   &kp LGUI    &kp LPAR        &kp RPAR    &kp N1      &kp N2      &kp N3      &kp N0      &kp BSLH
                                         &trans      &trans      &trans          &mo ADJ     &trans      &trans
                         >;
                 };
