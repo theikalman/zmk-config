@@ -27,13 +27,6 @@
     flavor = "tap-preferred";
 };
 
-/* &mt { */
-/*   quick-tap-ms = <150>; */
-/*   global-quick-tap; */
-/*   flavor = "tap-preferred"; */
-/*   tapping-term-ms = <125>; */
-/* }; */
-
 / {
      combos {
             compatible = "zmk,combos";
