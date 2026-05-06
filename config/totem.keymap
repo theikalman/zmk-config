@@ -56,7 +56,7 @@ label= "BASE"                              ;
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃     `     ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃     /     ┃     '     ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃    DEL    ┃RET[NUMSYM]┃ TAB[NAVI] ┃   ┃ ESC[NAVI] ┃SPC[NUMSYM]┃   BSPC    ┃
+//                                     ┃    DEL    ┃ TAB[NAVI] ┃RET[NUMSYM]┃   ┃ ESC[NAVI] ┃SPC[NUMSYM]┃   BSPC    ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
@@ -64,7 +64,7 @@ label= "BASE"                              ;
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I        &kp O       &kp P
                 &kp A       &kp S       &kp D       &kp F       &kp G           &kp H       &kp J       &kp K        &kp L       &kp SEMI
     &kp GRAVE   &mt LSHFT Z &mt LALT X  &mt LCTRL C &mt LGUI V  &kp B           &kp N       &mt RGUI M  &mt RCTRL COMMA &mt RALT DOT &mt RSHFT FSLH &kp SQT
-                                        &kp DEL   &lt NUMSYM RET &lt NAVI TAB   &lt NAVI ESC &lt NUMSYM SPACE &kp BSPC
+                                        &kp DEL   &lt NUMSYM TAB &lt NAVI RET   &lt NAVI ESC &lt NUMSYM SPACE &kp BSPC
                         >;
                 };
 
@@ -82,7 +82,7 @@ label= "NUMSYM"                            ;
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃           ┃   SHFT    ┃    ALT    ┃   CTRL    ┃    CMD    ┃     (     ┃   ┃     )     ┃     1     ┃     2     ┃     3     ┃           ┃     \     ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃           ┃RET[NUMSYM]┃           ┃   ┃     0     ┃SPC[NUMSYM]┃    ADJ    ┃
+//                                     ┃           ┃TAB[NUMSYM]┃           ┃   ┃     0     ┃SPC[NUMSYM]┃    ADJ    ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
@@ -107,7 +107,7 @@ label= "NAVI"                              ;
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃           ┃   SHFT    ┃    ALT    ┃   CTRL    ┃    CMD    ┃           ┃   ┃           ┃    CMD    ┃    CTRL   ┃     ALT   ┃    SHFT   ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃    DEL    ┃    RET    ┃ TAB[NAVI] ┃   ┃ ESC[NAVI] ┃    SPC    ┃    BSPC   ┃
+//                                     ┃    DEL    ┃    TAB    ┃ RET[NAVI] ┃   ┃ ESC[NAVI] ┃    SPC    ┃    BSPC   ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
@@ -115,7 +115,7 @@ label= "NAVI"                              ;
                 &none       &none       &kp HOME    &kp PG_UP   &none            &none       &none       &none       &none       &none
                 &none       &none       &kp END     &kp PG_DN   &none            &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none
     &none       &kp LSHFT   &kp LALT    &kp LCTRL   &kp LGUI    &none            &none       &kp RGUI    &kp RCTRL   &kp RALT    &kp RSHFT   &none
-                                        &kp DEL     &kp RET     &trans           &trans      &kp SPACE   &kp BSPC
+                                        &kp DEL     &kp TAB     &trans           &trans      &kp SPACE   &kp BSPC
                         >;
                 };
 
